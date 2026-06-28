@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste001</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <main>
+        <div id="sumir">
+            Qual é seu nome? <input type="text" name="yname" id="yname">
+            <input type="button" value="Enviar" onclick="fName()">
+        </div>
+        <h1 id="welcome">Seja bem-vindo(a), </h1> 
+        <button id="aperte">Aperte aqui</button>
+        <div id="congrats">
+            <p>Meus parabéns! Você apertou no botão certo. Tome aqui a sua recompensa:</p>
+            <p><strong>NADA!</strong></p>
+        </div>
+        <button id="nao-aperte">Não aperte aqui</button>
+        <button id="changeName">Mudar nome</button>
+    </main>
+    <script>
+        //Boas-vindas
+        function fName() {
+            var namev = document.getElementById('yname')
+            var namev = String(namev.value)
+            welcome.innerHTML = `Seja bem-vindo(a), ${namev.toUpperCase()}`
+            sumir.style.display = 'none'
+            changeName.style.display = 'block'
+        }
+
+        //Aperte
+        var apertev = document.getElementById('aperte')
+        apertev.addEventListener('click', aperte)
+        function aperte() {
+            congrats.style.display = 'block'
+        }
+
+        //Não aperte
+        var naoApertev = document.getElementById('nao-aperte')
+        naoApertev.addEventListener('click', naoAperte)
+        function naoAperte() {
+            alert('Você foi hackeado! Avisei para não apertar.')
+        }
+
+        //Mudar nome
+        var changeNamev = document.getElementById('changeName')
+        changeNamev.addEventListener('click', fChangeName)
+        function fChangeName() {
+            sumir.style.display = 'block'
+            changeName.style.display = 'none'
+        }
+    </script>
+</body>
+</html>

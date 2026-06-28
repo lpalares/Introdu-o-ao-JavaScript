@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Arial, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color: lightgray;
+    width: 100vw;
+    height: 100vh;
+}
+
+header {
+    background-color: black;
+    color: #0404c2;
+    padding: 10px 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+main {
+    display: grid;
+    width: 100vw;
+    grid-template-columns: 5px 1fr 5px;
+}
+
+section {
+    background-color: white;
+    grid-column: 2 / 3;
+    margin: 20px 0px;
+    border-radius: 8px;
+    padding: 15px 5px;
+}
+
+h1 {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1em;
+    text-align: center;
+}
+
+p {
+    margin: 15px 0px;
+    line-height: 1.5em;
+    text-indent: 1em;
+    text-align: justify;
+    font-size: 0.8em;
+}
+
+.selBackground, .selContent {
+    display: flex;
+    flex-direction: column;
+    max-width: 450px;
+    margin: 10px auto;
+    justify-content: center;
+}
+
+.selBackground img, .selContent img {
+    width: 95%;
+    margin: 10px auto 0px auto;
+}
+
+button {
+    width: 100%;
+    margin-top: 10px;
+    padding: 5px;
+    font-weight: bold;
+}
+
+#imgRes {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 45px;
+    margin-top: 0px;
+}
+
+@media screen and (min-width: 900px) {
+    header {
+        font-size: 1.5em;
+    }
+
+    main {
+        grid-template-columns: 5px 500px 5px 1fr 5px;
+    }
+
+    section#imgRes {
+        grid-column:  4 / 5;
+        margin: 20px 0px;
+    }
+}
