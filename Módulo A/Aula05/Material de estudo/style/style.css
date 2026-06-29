@@ -16,8 +16,6 @@
 
 body {
     background-color: var(--fundo-principal);
-    width: 100vw;
-    height: 100vh;
 }
 
 header {
@@ -56,6 +54,10 @@ main a {
 
 main a:hover {
     color: var(--destaque);
+}
+
+ol {
+    margin: 20px;
 }
 
 #no-footer {
