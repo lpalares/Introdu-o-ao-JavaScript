@@ -1,0 +1,54 @@
+@media screen and (max-width: 170px) {
+    header, main, footer {
+        padding: 0px;
+    }
+
+    header, p, footer {
+        font-size: 0.8em;
+        text-indent: 0em;
+        text-align: center;
+    }
+
+    h1, h2 {
+        font-size: 1em;
+    }
+}
+
+@media screen and (min-width: 400px) {
+    main {
+        width: 90vw;
+        margin: 20px auto 25px auto;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    header {
+        font-size: 1.5em;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    p {
+        margin-top: 20px;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    footer {
+        padding: 15px;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    #no-footer {
+        display: block;
+    }
+
+    footer {
+        display: none;
+    }
+}
