@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Governo Federal</title>
+</head>
+<body>
+    <h1>Descubra se você é estrangeiro no Brasil</h1>
+    <label for="nationality">Você nasceu em qual país?</label>
+    <input type="text" name="nationality" id="nationality">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="res">
+        <p>Aguardando resposta...</p>
+    </div>
+    <script>
+        function verificar() {
+            let nationVar = document.getElementById('nationality');
+            let res = document.querySelector('div#res');
+            if(nationVar.value == 'Brasil' || nationVar.value == 'brasil') {
+                res.innerHTML = '<p>Você é brasileiro!</p>';
+            } else {
+                res.innerHTML = '<p>Você é estrangeiro!</p>';
+            }
+        }
+    </script>
+</body>
+</html>
