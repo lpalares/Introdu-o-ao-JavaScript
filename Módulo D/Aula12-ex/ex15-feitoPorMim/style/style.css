@@ -17,21 +17,10 @@ section {
     padding: 15px;
     width: 500px;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.363);
-    text-align: center;
 }
 
-#res {
-    margin-top: 15px;
-}
-
-#res img {
-    border: 1px solid black;
-    border-radius: 50%;
-    transition: 0.5s;
-}
-
-#res img:hover {
-    border-radius: 50px;
+#birthBox, #genderBox {
+    padding-bottom: 8px;
 }
 
 footer {
