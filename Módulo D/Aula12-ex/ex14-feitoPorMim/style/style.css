@@ -20,6 +20,14 @@ section {
     text-align: center;
 }
 
+#res {
+    margin-top: 15px;
+}
+
+#res img {
+    border-radius: 50%;
+}
+
 footer {
     text-align: center;
     font-style: italic;
