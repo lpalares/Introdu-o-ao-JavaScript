@@ -19,8 +19,8 @@ section {
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.363);
 }
 
-#birthBox, #genderBox {
-    padding-bottom: 8px;
+input {
+    margin-bottom: 12px;
 }
 
 footer {
