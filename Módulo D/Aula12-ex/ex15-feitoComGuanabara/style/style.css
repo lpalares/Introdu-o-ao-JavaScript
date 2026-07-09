@@ -19,25 +19,6 @@ section {
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.363);
 }
 
-input {
-    margin-bottom: 12px;
-}
-
-#res {
-    width: 100%;
-}
-
-#res img {
-    display: block;
-    margin: 15px auto 0px auto;
-    border-radius: 45%;
-    transition: border-radius 1s;
-}
-
-#res img:hover {
-    border-radius: 25%;
-}
-
 footer {
     text-align: center;
     font-style: italic;

@@ -1,5 +1,6 @@
 // Esse código foi criado por Luan Palares Santos para o curso gratuito e introdutório de JavaScript do Curso em Vídeo.
 const resVar = document.getElementById('res'); // Quando busco um elemento pelo Id, prefiro usar esse método em vez de querySelector.
+const imgVar = document.createElement('img');
 function check() {
     // Verificando ano de nascimento
     let now = new Date();
@@ -18,19 +19,39 @@ function check() {
         // Verificando gênero
         let genderVar = document.querySelector('input[name="gender"]:checked').value;
         if(genderVar == 'masc') {
-            genderVar = 'Homem';
+            // Masculino
+            if(age <= 13) {
+                imgVar.src = 'img/boy.jpg'; // Criança
+                genderVar = 'um garoto';
+            } else if (age <= 20) {
+                imgVar.src = 'img/youngman.jpg'; // Jovem
+                genderVar = 'um jovem';
+            } else if(age <= 49) {
+                imgVar.src = 'img/man.jpg'; // Adulto
+                genderVar = 'um homem';
+            } else {
+                imgVar.src = 'img/old man.jpg'; // Idoso
+                genderVar = 'um senhor';
+            }
         } else if(genderVar == 'fem') {
-            genderVar = 'Mulher';
-        } else {
-            resVar.innerHTML = 'Houve um erro! Verifique o console.';
-            console.log('Houve um erro ao selecionar o gênero!');
+            // Feminino
+            if(age <= 13) {
+                imgVar.src = 'img/girl.jpg'; // Criança
+                genderVar = 'uma garota';
+            } else if(age <= 20) {
+                imgVar.src = 'img/youngfem.jpg'; // Jovem
+                genderVar = 'uma jovem';
+            } else if(age <= 49) {
+                imgVar.src = 'img/woman.jpg'; // Adulta
+                genderVar = 'uma mulher';
+            } else {
+                imgVar.src = 'img/old woman.jpg'; // Idosa
+                genderVar = 'uma senhora';
+            }
         }
         // Resultado
-        resVar.innerHTML = '';
+        resVar.style.textAlign = 'center';
         resVar.innerHTML = `Detectamos ${genderVar} de ${age} anos!`;
-        // Lembrete: Colocar imagem.
-        // Lembrete 2: Mudar o fundo dependendo do resultado (opcional).
-        // Lembrete 3: Melhorar responsividade do "site" (opcional).
-        // Olá. Você está lendo isso? Agradeço por ler o código de um amador como eu! <3
+        resVar.appendChild(imgVar);
     }
 }
