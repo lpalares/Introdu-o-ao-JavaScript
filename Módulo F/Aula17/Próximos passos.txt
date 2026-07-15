@@ -1,0 +1,14 @@
+...daqui para frente.
+
+Você concluiu o curso de Introdução ao JavaScript do Curso em Vídeo e agora precisa continuar seus estudos de JS.
+Abaixo estão as recomendações do que estudar feita pelo professor Gustavo Guanabara.
+
+1. Functions;
+2. Objetos;
+3. Modularização;
+4. RegEx (Expressões regulares);
+5. JSON;
+6. AJAX;
+7. NodeJS.
+
+Meus parabéns por chegar até aqui! Não pare porque esse curso acabou, sempre temos o que aprender. Desejo bons estudos! ;)
