@@ -25,12 +25,12 @@ function count() {
     res.innerHTML = 'Contando:<br>';
     if(startValue <= endValue) {
         for(let count = startValue;count <= endValue;count += stepValue) {
-            res.innerHTML += ` ${count} 👉`;
+            res.innerHTML += ` ${count} \u{1F449}`;
         }
     } else {
         for(let count = startValue;count >= endValue;count -= stepValue) {
-            res.innerHTML += ` ${count} 👉`;
+            res.innerHTML += ` ${count} \u{1F449}`;
         }
     }
-    res.innerHTML += ` Fim!`;
+    res.innerHTML += ` \u{1F3C1}`;
 }
